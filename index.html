@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio 2º Bim | 1º NDN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<!--vamos usar de novo o tailwind-->
+
+<body class="min-h-screen flex flex-col">
+
+   <!-- aqui é a parte de cima da página, o header -->
+   <header class="py-6 px-4 md:px-8 flex justify-center">
+    <div class="backdrop-blur-md bg-white/30 shadow-md border border-white/40 rounded-xl px-6 py-4">
+      <h1 class="text-3xl md:text-4xl font-bold text-green drop-shadow">Portfólio 2º Bimestre</h1>
+    </div>
+  </header>
+    
+    <!-- aqui é o conteúdo principal, com os cardzinhos -->
+    <main class="flex-grow container mx-auto px-4 md:px-8 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+
+                <div class="animated-banner"></div>
+
+                <img src="img/juross.png" alt="Capa" class="w-full h-40 object-cover rounded-md mb-4" />
+
+                <div class="flex items-center mb-3">
+                 
+                    <div class="">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                  </div>
+
+                    <h2 class="text-xl font-semibold">Juros Simples e Compostos</h2>
+                </div>
+                <br><h3 class="text-md text-gray-600 mb-3">de <b>Matemática Financeira</b></h3><br>
+
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'juros')">Exibir Mapa Mental</button>
+                </div>
+            </div>
+
+
+
+            
+            <!-- Card 3 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/sistema.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <div class="">
+                        <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                        </svg>
+                      </div>
+                    <h2 class="text-xl font-semibold">Sistema Métrico Decimal</h2>
+                </div>
+                <br><h3 class="text-md text-gray-600 mb-3">de <b>Sistema de Medidas</b></h3>
+                <div class="flex flex-col space-y-2"><br>
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'sistema-metrico-decimal')">Exibir Mapa Mental</button>
+                </div>
+            </div>
+
+            
+            <!-- Card 4 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/sequencias.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                    <h2 class="text-xl font-semibold">Sequências Numéricas</h2>
+                </div>
+                <h3 class="text-md text-gray-600 mb-3">de <b>Números e Álgebra</b></h3>
+                <p class="text-sm text-gray-500 mb-4 flex-grow">⋆ Conceito;<br>⋆ Progressão Aritmética (P.A.)<br>⋆ Progressão Geométrica (P.G.)</p>
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'sequencias-numericas')">Exibir Mapa Mental</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/1grau.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                    <h2 class="text-xl font-semibold">Funções: Função do 1º Grau</h2>
+                </div>
+                <br><h3 class="text-md text-gray-600 mb-3">de <b>Números e Álgebra</b></h3><br>
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'função-do-1º-grau')">Exibir Mapa Mental</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 6 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/2grau.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                    <h2 class="text-xl font-semibold">Funções: Função do 2º Grau</h2>
+                </div>
+                <h3 class="text-md text-gray-600 mb-3">de <b>Números e Álgebra</b></h3>
+                <p class="text-sm text-gray-500 mb-4 flex-grow"><br>⋆ Função Modular;<br>⋆ Função Exponencial</p>
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'função-do-2º-grau')">Exibir Mapa Mental</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 7 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/conceito.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                    <h2 class="text-xl font-semibold">Funções: Conceito de Função</h2>
+                </div>
+                <p class="text-sm text-gray-500 mb-4 flex-grow"><br>⋆ Funções afins;<br>⋆ Lineares;<br>⋆ Constantes;<br>⋆ Função identidade;<br>⋆ Função Composta e Inversa</p>
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'conceito-de-função')">Exibir Mapa Mental</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Card 8 -->
+            <div class="card relative p-6 flex flex-col overflow-hidden">
+                <div class="animated-banner"></div>
+                <img src="img/conjuntos.png" alt="capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                <div class="flex items-center mb-3">
+                    <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1h-6v1zm3-19c-3.87 0-7 3.13-7 7 0 3.12 2.03 5.76 4.84 6.68v2.32c0 .55.45 1 1 1h2.32c.55 0 1-.45 1-1v-2.32c2.81-.92 4.84-3.56 4.84-6.68 0-3.87-3.13-7-7-7zm0 12c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"></path>
+                    </svg>
+                    <h2 class="text-xl font-semibold">Conjuntos Numéricos</h2>
+                </div>
+                <h3 class="text-md text-gray-600 mb-3">de <b>Números e Álgebra</b></h3>
+                <p class="text-sm text-gray-500 mb-4 flex-grow">⋆ O que são;<br>⋆ Importância;<br>⋆ Relação;<br>⋆ Principais Conjuntos</p>
+                <div class="flex flex-col space-y-2">
+                    <button class="btn py-2 px-4 rounded-md text-sm font-medium w-full" onclick="openModal('mapa', 'conjuntos-numericos')">Exibir Mapa Mental</button>
+                    
+                </div>
+            </div>
+
+                <!--demais informações-->
+
+                <div class="card relative p-6 flex flex-col overflow-hidden">
+                    <div class="animated-banner"></div>
+                    <img src="img/dms.png" alt="Capa" class="w-full h-40 object-cover rounded-md mb-4" />
+                    <div class="flex items-center mb-3">
+                        <div class="">
+                            <svg class="subject-icon mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5-1.95 0-4.05.4-5.5 1.5v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05 1.35-.65 3.3-1.1 4.75-1.1 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.25.15.5-.1.5-.35v-14.66c-.6-.15-1.1-.35-1.75-.5zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5v-11c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11z"/>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-semibold">Demais Informações</h2>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-4 flex-grow"><b>⋆ Todos cooperaram na elaboração do site;<br>⋆ O esquema de cor usado para a página principal foi do sistema Complementar, numa paleta de tons pastéis, e para os mapas mentais, somente tons pastéis.</b></p>
+
+                </div>
+
+
+
+        </div>
+    </main>
+    
+    <!-- Aqui é o rodapé -->
+    <footer class="py-6 px-4 md:px-8 text-center border-t border-gray-200">
+        <p class="text-sm">1º NDN - Ana Julia F. R., Guilherme Lima e Maria Eduarda Dias Melo</p>
+    </footer>
+    
+    <!-- Aqui é o pop-up que vai aparecer -->
+    <div id="modal" class="modal fixed inset-0 flex items-center justify-center z-50 p-4">
+        <div class="modal-content w-full max-w-4xl md:max-w-5xl rounded-lg overflow-hidden relative">
+            <div class="bg-white p-6 flex flex-col items-center">
+                <button id="closeModal" class="close-btn absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-gray-200">×</button>
+              
+                <h3 id="modalTitle" class="text-xl font-semibold mb-4 text-center"></h3>
+              
+                <img id="modalImage" src="img/conjuntos.png" alt="Mapa mental" class="w-full max-w-3xl max-h-[70vh] object-contain rounded-md shadow mb-4" />
+              
+                <p id="modalDescription" class="text-gray-600 text-center"></p>
+              </div>
+                </div>
+              </div>
+    
+    <script>
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('closeModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        
+        const imageMap = {
+      mapa: {
+        'juros': 'img/juros.png',
+        'conjuntos-numericos': 'img/conjuntosn.png',
+        'sistema-metrico-decimal': 'img/smd.png',
+        'sequencias-numericas':'img/sqc.png',
+        'função-do-1º-grau':'img/f1grau.png',
+        'função-do-2º-grau':'img/f2grau.png',
+        'conceito-de-função':'img/conceitof.png',
+
+      }
+    };
+
+        function openModal(type, key) {
+            const readableTitle = key.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+            if (type === 'mapa') {
+    modalTitle.textContent = `Mapa Mental - ${readableTitle}`;
+    modalDescription.textContent = `~ por Maria Eduarda`;
+  } 
+
+  const imageSrc = imageMap[type][key];
+  if (imageSrc) {
+    modalImage.src = imageSrc;
+    modalImage.alt = `${type} ${readableTitle}`;
+  } else {
+    modalImage.src = 'img/placeholder.jpg';
+    modalImage.alt = 'Imagem não encontrada';
+  }
+
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+        
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        // Fechar o pop-up qdo apertar fora do conteudo
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Fechar o pop-up apertando Esc
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94b30605b5fff1f5',t:'MTc0OTE2MTY3Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
